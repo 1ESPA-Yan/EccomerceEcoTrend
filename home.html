@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>EcoTrend</title>
+
+		<!-- CSS do Bootstrap -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+		<!-- Biblioteca de ícones -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+		<!-- CSS do home.css -->
+		<link rel="stylesheet" href="./src/css/home.css">
+	</head>
+	<body>
+		<header>
+			<!-- NAVBAR -->
+			<nav class="navbar navbar-expand-lg sticky-top" id="barraNavegacao">
+				<div class="container">
+					<!-- Logo -->
+					<a class="navbar-brand" href="home.html">
+						<div class="icone-folha">
+							<i class="fa-solid fa-leaf"></i>
+						</div>
+						EcoTrend
+					</a>
+					<!-- Botão hamburguer - mobile -->
+					<button class="navbar-toggler" type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#menuNavegacao"
+							aria-label="Abrir menu">
+						<i class="fa-solid fa-bars"></i>
+					</button>
+					<!-- Menu - mobile -->
+					<div class="collapse navbar-collapse" id="menuNavegacao">
+						<!-- Links de navegação -->
+						<ul class="navbar-nav mx-auto gap-1">
+							<li class="nav-item">
+								<a class="nav-link active" href="home.html">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="categorias.html">Categorias</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="produto.html">Produtos</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="contato.html">Contato</a>
+							</li>
+						</ul>
+						<!-- Ícones -->
+						<div class="icones-navbar">
+							<button class="botao-icone" title="Buscar">
+								<i class="fa-solid fa-magnifying-glass"></i>
+							</button>
+							<div class="carrinho-container">
+								<button class="botao-icone" title="Carrinho">
+									<i class="fa-solid fa-bag-shopping"></i>
+								</button>
+								<span class="carrinho-quantidade">3</span>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<!-- JS do Bootstrap -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>
