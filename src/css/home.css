@@ -2,26 +2,6 @@
     text-align: center;
 }
 
-#barraNavegacao .container {
-    flex-wrap: nowrap;
-}
-
-.icones-navbar {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-left: auto;
-}
-
-#barraNavegacao .navbar-toggler {
-    margin-left: 0;
-    border: none;
-}
-
-#menuOffcanvas {
-    width: 70vw;
-}
-
 /* Padrão, celular */
 .carousel-item img {
     height: 30vh;
@@ -43,7 +23,3 @@
     }
 }
 
-.card-img-top {
-    height: 200px;
-    object-fit: cover;
-}
