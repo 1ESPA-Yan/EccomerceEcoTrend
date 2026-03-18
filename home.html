@@ -21,23 +21,17 @@
 			<!-- NAVBAR -->
 			<nav class="navbar navbar-expand-lg sticky-top" id="barraNavegacao">
 				<div class="container">
+
 					<!-- Logo -->
 					<a class="navbar-brand" href="home.html">
 						<div class="icone-folha">
-							<i class="fa-solid fa-leaf"> </i>
+							<i class="fa-solid fa-leaf"></i>
 						</div>
 						EcoTrend
 					</a>
-					<!-- Botão hamburguer - mobile -->
-					<button class="navbar-toggler" type="button"
-							data-bs-toggle="collapse"
-							data-bs-target="#menuNavegacao"
-							aria-label="Abrir menu">
-						<i class="fa-solid fa-bars"></i>
-					</button>
-					<!-- Menu - faz colapsar no mobile -->
-					<div class="collapse navbar-collapse" id="menuNavegacao">
-						<!-- Links de navegação -->
+
+					<!-- Menu horizontal — só aparece em telas grandes (lg+) -->
+					<div class="collapse navbar-collapse" id="menuNavegacaoDesktop">
 						<ul class="navbar-nav mx-auto gap-1">
 							<li class="nav-item">
 								<a class="nav-link active" href="home.html">Home</a>
@@ -53,16 +47,55 @@
 							</li>
 						</ul>
 					</div>
-					<!-- Ícones -->
+
+					<!-- Carrinho + hambúrguer agrupados à direita -->
 					<div class="icones-navbar">
 						<div class="carrinho-container">
 							<button class="botao-icone" title="Carrinho">
 								<i class="fa-solid fa-bag-shopping"></i>
 							</button>
 						</div>
+
+						<!-- d-lg-none = some em telas grandes, onde o menu horizontal já aparece -->
+						<button
+							class="navbar-toggler d-lg-none"
+							type="button"
+							data-bs-toggle="offcanvas"
+							data-bs-target="#menuOffcanvas"
+							aria-controls="menuOffcanvas"
+							aria-label="Abrir menu">
+							<i class="fa-solid fa-bars"></i>
+						</button>
 					</div>
+
 				</div>
 			</nav>
+			<!-- Drawer lateral — fica fora da navbar para não afetar o layout dela -->
+			<div class="offcanvas offcanvas-start" tabindex="-1" id="menuOffcanvas" aria-labelledby="menuOffcanvasLabel">
+				<div class="offcanvas-header">
+					<h5 class="offcanvas-title" id="menuOffcanvasLabel">
+						<i class="fa-solid fa-leaf me-2"></i>EcoTrend
+					</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fechar menu"></button>
+				</div>
+				<div class="offcanvas-body">
+					<ul class="navbar-nav gap-2">
+						<li class="nav-item">
+							<a class="nav-link active" href="home.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="categorias.html">Categorias</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="produto.html">Produtos</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contato.html">Contato</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
 		</header>
  
 		<!-- CARROSSEL -->
