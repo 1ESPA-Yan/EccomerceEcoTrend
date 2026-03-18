@@ -1,0 +1,25 @@
+/* Bloco de filtros laterais */
+.filtros {
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    padding: 24px;
+}
+
+/* Cada grupo de filtro (Categoria, Preço, Marca) */
+.filtro-grupo {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Remove a borda do último grupo */
+.filtro-grupo:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.filtro-grupo h6 {
+    font-weight: 600;
+    margin-bottom: 12px;
+}
