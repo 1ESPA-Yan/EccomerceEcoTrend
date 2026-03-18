@@ -1,25 +1,41 @@
-/* Bloco de filtros laterais */
+/* Filtros */
 .filtros {
-    background-color: #f8f8f8;
+    background-color: var(--bege);
     border-radius: 8px;
     padding: 24px;
 }
 
-/* Cada grupo de filtro (Categoria, Preço, Marca) */
+/* Cada grupo de filtro */
+
 .filtro-grupo {
     padding-bottom: 20px;
     margin-bottom: 20px;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid var(--divisor);
 }
 
 /* Remove a borda do último grupo */
+
 .filtro-grupo:last-child {
     border-bottom: none;
     margin-bottom: 0;
     padding-bottom: 0;
 }
 
+/* Títulos dos filtros */
+
 .filtro-grupo h6 {
     font-weight: 600;
     margin-bottom: 12px;
+    font-family: "Inter", sans-serif;
+    font-size: 0.85rem;
+    color: var(--texto-principal);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Checkboxes e radios selecionados: */
+
+.form-check-input:checked {
+    background-color: var(--verde-salvia);
+    border-color: var(--verde-salvia);
 }
