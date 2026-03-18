@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EcoTrend - Produto</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/global.css">
+    <link rel="stylesheet" href="./src/css/produto.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="barraNavegacao">
+        <div class="container">
+            <a class="navbar-brand" href="home.html">
+                <div class="icone-folha">
+                    <i class="fa-solid fa-leaf"></i>
+                </div>
+                EcoTrend
+            </a>
+            <div class="collapse navbar-collapse" id="menuNavegacaoDesktop">
+                <ul class="navbar-nav mx-auto gap-1">
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="categorias.html">Categorias</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="produto.html">Produtos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+            <div class="icones-navbar">
+                <div class="carrinho-container">
+                    <button class="botao-icone" title="Carrinho">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </button>
+                </div>
+                <button
+                    class="navbar-toggler d-lg-none"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#menuOffcanvas"
+                    aria-controls="menuOffcanvas"
+                    aria-label="Abrir menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="menuOffcanvas" aria-labelledby="menuOffcanvasLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="menuOffcanvasLabel">
+                <i class="fa-solid fa-leaf me-2"></i>EcoTrend
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fechar menu"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav gap-2">
+                <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="categorias.html">Categorias</a></li>
+                <li class="nav-item"><a class="nav-link active" href="produto.html">Produtos</a></li>
+                <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+        <div class="container my-5">
+
+            <!-- BREADCRUMB — template do Bootstrap para indicar onde o usuário está -->
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="home.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="categorias.html">Categorias</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Camiseta Orgânica</li>
+                </ol>
+            </nav>
+
+            <!-- DETALHE DO PRODUTO — estrutura baseada no template Album do Bootstrap -->
+            <div class="row g-5 align-items-start">
+
+                <!-- Coluna da imagem -->
+                <div class="col-12 col-md-6">
+                    <img
+                        src="./src/images/CamisetaOrganica.png"
+                        alt="Camiseta Orgânica"
+                        class="img-produto">
+                </div>
+
+                <!-- Coluna das informações -->
+                <div class="col-12 col-md-6">
+
+                    <span class="badge-categoria">Roupas e Acessórios</span>
+                    <h1 class="produto-nome">Camiseta Orgânica</h1>
+                    <p class="produto-preco">R$ 89,90</p>
+
+                    <p class="produto-descricao">
+                        Feita 100% com algodão orgânico certificado, essa camiseta combina
+                        conforto e responsabilidade ambiental. Produzida sem agrotóxicos e
+                        com tingimento natural, é a escolha perfeita para quem quer um
+                        guarda-roupa mais consciente.
+                    </p>
+
+                    <!-- Seletor de tamanho — template de botões do Bootstrap -->
+                    <div class="mb-4">
+                        <p class="fw-600 mb-2">Tamanho</p>
+                        <div class="d-flex gap-2">
+                            <input type="radio" class="btn-check" name="tamanho" id="pp" autocomplete="off">
+                            <label class="btn btn-outline-secondary" for="pp">PP</label>
+
+                            <input type="radio" class="btn-check" name="tamanho" id="p" autocomplete="off" checked>
+                            <label class="btn btn-outline-secondary" for="p">P</label>
+
+                            <input type="radio" class="btn-check" name="tamanho" id="m" autocomplete="off">
+                            <label class="btn btn-outline-secondary" for="m">M</label>
+
+                            <input type="radio" class="btn-check" name="tamanho" id="g" autocomplete="off">
+                            <label class="btn btn-outline-secondary" for="g">G</label>
+
+                            <input type="radio" class="btn-check" name="tamanho" id="gg" autocomplete="off">
+                            <label class="btn btn-outline-secondary" for="gg">GG</label>
+                        </div>
+                    </div>
+
+                    <!-- Quantidade -->
+                    <div class="mb-4">
+                        <p class="fw-600 mb-2">Quantidade</p>
+                        <div class="input-group quantidade-grupo">
+                            <button class="btn btn-outline-secondary" type="button">
+                                <i class="fa-solid fa-minus"></i>
+                            </button>
+                            <input type="number" class="form-control text-center" value="1" min="1">
+                            <button class="btn btn-outline-secondary" type="button">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Botões de ação -->
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-outline-secondary btn-lg">
+                            <i class="fa-solid fa-bag-shopping me-2"></i>Adicionar ao Carrinho
+                        </button>
+                    </div>
+
+                    <!-- Informações extras — lista do Bootstrap -->
+                    <ul class="lista-detalhes">
+                        <li><i class="fa-solid fa-leaf me-2"></i>100% algodão orgânico certificado</li>
+                        <li><i class="fa-solid fa-droplet me-2"></i>Tingimento natural sem químicos</li>
+                        <li><i class="fa-solid fa-truck me-2"></i>Frete grátis acima de R$ 150</li>
+                        <li><i class="fa-solid fa-rotate-left me-2"></i>Troca em até 30 dias</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-12 col-md-4">
+                    <h5><i class="fa-solid fa-leaf me-2"></i>EcoTrend</h5>
+                    <p>Um e-commerce dedicado a produtos sustentáveis e ecológicos, promovendo um estilo de vida mais consciente.</p>
+                    <div class="footer-icones-sociais">
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2">
+                    <h5>Navegação</h5>
+                    <a href="home.html">Home</a>
+                    <a href="categorias.html">Categorias</a>
+                    <a href="produto.html">Produtos</a>
+                    <a href="contato.html">Contato</a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h5>Políticas</h5>
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Política de Trocas</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
+                <div class="col-12 col-md-3">
+                    <h5>Contato</h5>
+                    <a href="mailto:contato@ecotrend.com"><i class="fa-solid fa-envelope me-2"></i>contato@ecotrend.com</a>
+                    <a href="tel:+5511999999999"><i class="fa-solid fa-phone me-2"></i>(11) 99999-9999</a>
+                    <a href="#"><i class="fa-solid fa-location-dot me-2"></i>São Paulo, SP</a>
+                </div>
+            </div>
+            <div class="footer-linha-final">
+                <p>© 2025 EcoTrend. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

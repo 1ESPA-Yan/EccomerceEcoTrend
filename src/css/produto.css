@@ -1,0 +1,78 @@
+/* Imagem principal do produto */
+.img-produto {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Badge de categoria */
+.badge-categoria {
+    display: inline-block;
+    background-color: #f5f0e8;
+    color: #555;
+    font-size: 0.8rem;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+}
+
+/* Nome do produto */
+.produto-nome {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+/* Preço */
+.produto-preco {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+/* Descrição */
+.produto-descricao {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 24px;
+}
+
+/* Input de quantidade */
+.quantidade-grupo {
+    width: 140px;
+}
+
+/* Lista de detalhes do produto */
+.lista-detalhes {
+    list-style: none;
+    padding: 0;
+    margin-top: 24px;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 20px;
+}
+
+.lista-detalhes li {
+    color: #555;
+    padding: 6px 0;
+    font-size: 0.9rem;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    margin-bottom: 32px;
+}
+
+.breadcrumb-item a {
+    color: #555;
+    text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+    color: #000;
+}
+
+/*ajuste de espaçamento para evitar que o conteudo fique escondido atrás da navbar fixa*/
+body {
+    padding-top: 40px;
+}
+
