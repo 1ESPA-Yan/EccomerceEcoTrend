@@ -1,5 +1,33 @@
+/* Título principal */
+
 .main-title {
+    padding: 48px 0 16px;
     text-align: center;
+}
+
+.main-title h2 {
+    font-size: 2rem;
+    color: var(--texto-principal);
+}
+
+.main-title h3 {
+    font-size: 1rem;
+    color: var(--texto-secundario);
+    font-family: "Inter", sans-serif;
+}
+
+/* Títulos categorias */
+
+.title {
+    margin-top: 48px;
+    margin-bottom: 24px;
+}
+
+.title h2 {
+    font-size: 1.5rem;
+    color: var(--texto-principal);
+    border-bottom: 1px solid var(--divisor);
+    padding-bottom: 12px;
 }
 
 /* Padrão, celular */
