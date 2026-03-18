@@ -24,6 +24,11 @@
     width: 70vw;
 }
 
+/* fundo branco na barra de navegação */
+#barraNavegacao {
+    background-color: #f5f0e8;
+}
+
 .card-img-top {
     height: 200px;
     object-fit: cover;
