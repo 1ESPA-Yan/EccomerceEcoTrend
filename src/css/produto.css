@@ -70,9 +70,3 @@
 .breadcrumb-item a:hover {
     color: #000;
 }
-
-/*ajuste de espaçamento para evitar que o conteudo fique escondido atrás da navbar fixa*/
-body {
-    padding-top: 40px;
-}
-
