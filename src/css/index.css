@@ -78,3 +78,19 @@
         height: 50vh;
     }
 }
+
+/* Ajuste do caption do carrossel no mobile */
+@media (max-width: 767px) {
+    .carousel-caption h2 {
+        font-size: 1.3rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.95rem;
+    }
+
+    .carousel-caption .btn {
+        font-size: 0.85rem;
+        padding: 6px 12px;
+    }
+}
