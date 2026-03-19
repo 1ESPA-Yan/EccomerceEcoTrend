@@ -22,6 +22,11 @@ h1, h2, h3, h4, h5 {
 }
 
 .navbar-brand {
+    font-family: "EB Garamond" serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--texto-principal);
+    letter-spacing: 0.02em;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -33,15 +38,21 @@ h1, h2, h3, h4, h5 {
 
 #barraNavegacao {
     background-color: var(--bege);
+    border-bottom: 1px solid var(--divisor);
+    padding: 12px 0;
 }
 
 #barraNavegacao .nav-link {
     color: var(--texto-principal);
-    font-size: 0.9rem;
+    font-size: 0.875rem;
+    padding: 6px 14px;
+    border-radius: 20px;
+    transition: all 0.2s;
 }
 
 #barraNavegacao .nav-link:hover,
 #barraNavegacao .nav-link.active {
+    background-color: var(--bege);
     color: var(--verde-salvia);
 }
 
@@ -86,7 +97,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .card {
-    border: 1xp solid var(--divisor);
+    border: 1px solid var(--divisor);
     border-radius: 8px;
 }
 
@@ -133,6 +144,26 @@ h1, h2, h3, h4, h5 {
     background-color: var(--verde-salvia) !important;
     border-color: var(--verde-salvia) !important;
     color: var(--off-white) !important;
+}
+
+.botao-icone {
+    background: transparent;
+    border: none;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    color: var(--texto-principal);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botao-icone:hover {
+    background-color: var(--bege);
+    color: var(--verde-salvia);
 }
 
 /* Footer */
