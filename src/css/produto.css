@@ -8,8 +8,9 @@
 /* Badge de categoria */
 .badge-categoria {
     display: inline-block;
-    background-color: #f5f0e8;
-    color: #555;
+    background-color: var(--bege);
+    color: var(--texto-secundario);
+    font-family: "Inter", sans-serif;
     font-size: 0.8rem;
     padding: 4px 12px;
     border-radius: 20px;
@@ -25,6 +26,8 @@
 
 /* Preço */
 .produto-preco {
+    font-family: "Inter", sans-serif;
+    color: var(--texto-principal);
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 16px;
@@ -32,7 +35,7 @@
 
 /* Descrição */
 .produto-descricao {
-    color: #555;
+    color: var(--texto-secundario);
     line-height: 1.7;
     margin-bottom: 24px;
 }
@@ -40,6 +43,7 @@
 /* Input de quantidade */
 .quantidade-grupo {
     width: 140px;
+
 }
 
 /* Lista de detalhes do produto */
@@ -52,9 +56,13 @@
 }
 
 .lista-detalhes li {
-    color: #555;
+    color: var(--texto-secundario);
     padding: 6px 0;
     font-size: 0.9rem;
+}
+
+.lista-detalhes li i{
+    color: var(--verde-salvia);
 }
 
 /* Breadcrumb */
@@ -63,10 +71,35 @@
 }
 
 .breadcrumb-item a {
-    color: #555;
+    color: var(--texto-secundario);
     text-decoration: none;
 }
 
 .breadcrumb-item a:hover {
-    color: #000;
+    color: var(--texto-principal);
+}
+
+/* Botões de tamanho (preencher o fundo para o selecionado) */
+
+.btn-secundario:hover {
+    background-color: var(--verde-salvia);
+    border-color: var(--verde-salvia);
+    color: var(--off-white);
+}
+
+.btn-check:checked + .btn-secundario {
+    background-color: var(--verde-salvia) !important;
+    border-color: var(--verde-salvia) !important;
+    color: var(--off-white) !important;
+}
+
+/* Botões de quantidade (- e +)*/
+
+.botao-quantidade {
+    border: 1px solid var(--divisor);
+    color: var(--texto-principal);
+}
+
+.botao-quantidade:hover {
+    background-color: var(--bege);
 }
