@@ -1,0 +1,18 @@
+/* Título */
+
+main h2 {
+    font-size: 2rem;
+    margin-bottom: 4px;
+}
+
+/* Campos formulário */
+
+.form-control {
+    border: 1px solid var(--divisor);
+    border-radius: 8px;
+}
+
+.form-control:focus {
+    border-color: var(--verde-salvia);
+    box-shadow: none;
+}
