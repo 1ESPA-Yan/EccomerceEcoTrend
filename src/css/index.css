@@ -1,0 +1,96 @@
+/* Texto carrossel */
+
+.carousel-caption h2 {
+    color: #ffffff;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
+    font-size: 1.8rem;
+}
+
+.carousel-caption p {
+    color: #ffffff;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Botões do carrossel */
+
+.carousel-caption .btn {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: var(--texto-principal);
+    border: none;
+    font-weight: 500;
+    backdrop-filter: blur(4px);
+}
+
+.carousel-caption .btn:hover {
+    background-color: var(--off-white);
+    color: var(--verde-salvia);
+}
+
+/* Título principal */
+
+.main-title {
+    padding: 48px 0 16px;
+    text-align: center;
+}
+
+.main-title h2 {
+    font-size: 2rem;
+    color: var(--texto-principal);
+}
+
+.main-title h3 {
+    font-size: 1rem;
+    color: var(--texto-secundario);
+    font-family: "Inter", sans-serif;
+}
+
+/* Títulos categorias */
+
+.title {
+    margin-top: 48px;
+    margin-bottom: 24px;
+}
+
+.title h2 {
+    font-size: 1.5rem;
+    color: var(--texto-principal);
+    border-bottom: 1px solid var(--divisor);
+    padding-bottom: 12px;
+}
+
+/* Padrão, celular */
+.carousel-item img {
+    height: 30vh;
+    object-fit: cover;
+    object-position: 0% 80%;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .carousel-item img {
+        height: 40vh;
+    }
+}
+
+/* Monitor */
+@media (min-width: 992px) {
+    .carousel-item img {
+        height: 50vh;
+    }
+}
+
+/* Ajuste do caption do carrossel no mobile */
+@media (max-width: 767px) {
+    .carousel-caption h2 {
+        font-size: 1.3rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.95rem;
+    }
+
+    .carousel-caption .btn {
+        font-size: 0.85rem;
+        padding: 6px 12px;
+    }
+}
